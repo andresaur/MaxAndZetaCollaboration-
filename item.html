@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>ZETA × MAX | Доступ</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0a0f1f, #111827);
+      color: white;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      background: rgba(17, 24, 39, 0.95);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 40px;
+      width: 360px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+      text-align: center;
+    }
+
+    .logos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 15px;
+    }
+
+    .logos img {
+      height: 40px;
+      object-fit: contain;
+      opacity: 0.9;
+    }
+
+    .logo-text {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .logo-text span {
+      color: #3b82f6;
+    }
+
+    .subtitle {
+      font-size: 13px;
+      color: #9ca3af;
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      font-weight: 500;
+    }
+
+    .desc {
+      font-size: 13px;
+      color: #9ca3af;
+      margin-bottom: 25px;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 10px;
+      background: linear-gradient(90deg, #3b82f6, #6366f1);
+      color: white;
+      font-size: 15px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 15px rgba(59,130,246,0.5);
+    }
+
+    .footer {
+      margin-top: 15px;
+      font-size: 12px;
+      color: #6b7280;
+    }
+
+    .badge {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #9ca3af;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- ЛОГОТИПЫ -->
+  <div class="logos">
+    <img src="https://via.placeholder.com/100x40?text=MAX" alt="MAX">
+    <img src="https://via.placeholder.com/100x40?text=ZETA" alt="ZETA">
+  </div>
+
+  <div class="logo-text">ZETA<span>×</span>MAX</div>
+  <div class="subtitle">Secure Access • ZETA GBHT System</div>
+
+  <h2>Корпоративный доступ</h2>
+
+  <div class="desc">
+    Для продолжения работы перейдите в защищённый портал MAX
+  </div>
+
+  <button onclick="go()">Перейти в корпоративный портал MAX</button>
+
+  <div class="footer">
+    © 2026 ZETA GBHT Corporation
+  </div>
+
+  <div class="badge">
+    Internal System • MAX Panel v4.2
+  </div>
+</div>
+
+<script>
+  function go() {
+    document.body.innerHTML = "<h2 style='color:white;text-align:center;margin-top:40vh;'>Подключение к MAX...</h2>";
+
+    setTimeout(() => {
+      window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+    }, 1500);
+  }
+</script>
+
+</body>
+</html>
